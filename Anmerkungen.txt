@@ -1,0 +1,48 @@
+Nodejs:
+    open source server enviroment
+    asynchrone requests
+    nutzt verschieden modules (z.b. require)
+    durch exports werden selber geschriebene modue dort hinzugefügt
+httpSever:
+    Dienstleitungsklasse- Service
+    ist die Hauptanwendung auf der alles ausgeführt wird
+    es werden die benötigten Module mit require festgelegt -> die module werden extra gedownloaded
+    die einzelen Routen, die ausgelagert sind werden mit require gehlolt
+    legt port fest
+    mit express wird die route (die ausgelagerte) genommen und genutzt(use)
+    listen() als test ob verbunden
+express:
+    was mach express?
+    serverseitiges Webframework für Node.js
+    einfach so ein framework mit speziellen features, das anwendung erleichten soll
+publicUserRoute:
+    verwendet express 
+    legt die speziele route fest und wird dann in httpServer nur noch aufgerufen
+    soll json zurück geben mit res.json, in den klammern das das json Objekt
+    router.get soll alle user zurück geben
+    imporiert UserSevice 
+publicUserModel:
+    holt sich mongoose und bcrypt
+    erstellt mit mongoose ein schema in dem die Attribute drinne sind
+    pre-saved methode zum psswort setzten, erstmal auskommentiert!
+PublicUserService:
+    importiert publicUserModel, damit es darauf zugreifen kann
+    testRoutes:
+    file in der getestet wird
+    verbindung muss erst mal gestartet werden über terminal node/ nodemon
+json:
+    was macht json?
+    {"name": "bezeichnung",
+    "telefon" : "124234"}
+mongoose:
+    (ist installiert)
+bcrypt:
+    (ist installiert)
+database:
+    Dantenbank ist MongoDB (noSQL)
+    in db.js wird die datenbank verbindung aufgebuat.
+    Connectionstirng wird in dafault.json festgelegt
+    alles 1:1 aus dem Video kopiert
+    hat alles mit der Datenbank anbindung zu tun
+config:
+    aus dem Video, hat auch was mit der Datenbank, bzw dem connectionString zur datenban zu tun

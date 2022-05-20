@@ -1,0 +1,8 @@
+httpServer.js starten mit: node .\httpServer.js
+                            (lässt sich auch mit 'npm start' starten)
+              zum automatischen laufen und aktualiesieren:  nodemon .\httpServer.js
+Konsole PleilHoch -> vorheriger befehl
+Website aufrufen unter : http://localhost:8080/
+exit nodemon: strg + c
+Strg + F = find words //replace with h
+Strg + shift + F = find words global //replace with h
