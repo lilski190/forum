@@ -1,0 +1,13 @@
+{
+    "session":{
+        "tokenKey" : "lsdkcnskjvnsfdvjdnv",
+         "timeout": "3000"
+    },
+    "db": {
+        "dbonfigOptions":{
+            "useNewUrlParser": true,
+            "useUnifiedTopology": true
+        },
+        "connectionString": "mongodb://localhost/Web2"
+    }
+}
