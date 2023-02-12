@@ -1,0 +1,74 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+:root{
+    font-family: "Verdana";
+    font-size: .8rem;
+    line-height: 1.5;
+}
+body{
+    background-color: #ffffff;
+    margin:0;
+}
+nav{
+    position: fixed;
+    top: 0;
+
+    z-index: 100;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30em,1fr)) ; 
+    background-color: black;
+    width: 100%;
+    
+}
+
+nav ul{
+    font-size: 1.7rem;
+    padding-left: 80%
+    
+}
+
+nav li{
+    display: inline-block;
+    padding: 10px 12px;
+    background-color: #eb0081aa;
+    border-radius: 10px;
+
+
+}
+
+nav li a{
+    color: white;
+}
+
+main{
+    display : grid;
+    margin: 0;
+    align-items: stretch;
+    grid-template-columns: 1fr 1fr;
+}
+div{
+
+    align-content: center;
+}
+#welcome{
+    padding: 35%;
+    margin-top: 5rem;
+    background-color: aquamarine;
+
+}
+#OpenLoginDialogButton{
+    height: 100%;
+    width: 100%;
+    border: #ffffff;
+    background-color: transparent;
+}
+
+#LogoutButton{
+    height: 100%;
+    width: 100%;
+    border: #ffffff;
+    background-color: transparent;
+}

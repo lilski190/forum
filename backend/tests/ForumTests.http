@@ -1,0 +1,33 @@
+http://localhost:8080/forumThreads/test
+
+###
+GET http://localhost:8080/forumThreads
+
+//:) forum erstllen, das default admin gehört
+###
+POST http://localhost:8080/forumThreads
+Content-Type: application/json
+
+{
+    "name" : "sonne",
+    "description" : "blablabla",
+    "ownerID" : "admin"
+
+}
+
+// :) Rufe Forum mit name  ab
+###
+GET http://localhost:8080/forumThreads/sonne
+
+// :) Update Forum
+###
+PUT http://localhost:8080/forumThreads/sonne
+Content-Type: application/json
+
+{
+    "description": "neue BEschreibeung der"
+}
+
+// :) Forum löschen
+###
+DELETE http://localhost:8080/forumThreads/sonne

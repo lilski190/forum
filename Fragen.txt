@@ -1,3 +1,0 @@
-- passwort rausfiltern, stringify, map, in model...?
-- forumModel -> wie bindet man die userID da ein? 
-			   -> soll name auch unique sein?, sonst kann es ja mehere mit gelichen namen geben
